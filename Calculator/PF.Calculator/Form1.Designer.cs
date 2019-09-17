@@ -42,7 +42,7 @@
             this.btn4 = new System.Windows.Forms.Button();
             this.btnSubtract = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
-            this.btnEmpty = new System.Windows.Forms.Button();
+            this.btnDot = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -178,13 +178,14 @@
             this.btnMultiply.Text = "x";
             this.btnMultiply.UseVisualStyleBackColor = true;
             // 
-            // btnEmpty
+            // btnDot
             // 
-            this.btnEmpty.Location = new System.Drawing.Point(127, 294);
-            this.btnEmpty.Name = "btnEmpty";
-            this.btnEmpty.Size = new System.Drawing.Size(40, 40);
-            this.btnEmpty.TabIndex = 19;
-            this.btnEmpty.UseVisualStyleBackColor = true;
+            this.btnDot.Location = new System.Drawing.Point(127, 294);
+            this.btnDot.Name = "btnDot";
+            this.btnDot.Size = new System.Drawing.Size(40, 40);
+            this.btnDot.TabIndex = 19;
+            this.btnDot.Text = "s";
+            this.btnDot.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
@@ -262,7 +263,7 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnEmpty);
+            this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.btn4);
@@ -299,7 +300,7 @@
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btnSubtract;
         private System.Windows.Forms.Button btnMultiply;
-        private System.Windows.Forms.Button btnEmpty;
+        private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnClear;
