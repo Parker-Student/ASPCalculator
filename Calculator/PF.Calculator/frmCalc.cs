@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PF.Calculator
 {
-    public partial class Form1 : Form
+    public partial class frmCalc : Form
     {
-        public Form1()
+        public frmCalc()
         {
             InitializeComponent();
         }

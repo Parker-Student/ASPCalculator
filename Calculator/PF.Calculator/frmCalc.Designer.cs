@@ -1,6 +1,6 @@
 ﻿namespace PF.Calculator
 {
-    partial class Form1
+    partial class frmCalc
     {
         /// <summary>
         /// Required designer variable.
@@ -180,11 +180,13 @@
             // 
             // btnDot
             // 
+            this.btnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDot.Location = new System.Drawing.Point(127, 294);
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(40, 40);
             this.btnDot.TabIndex = 19;
-            this.btnDot.Text = "s";
+            this.btnDot.Text = ".";
+            this.btnDot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDot.UseVisualStyleBackColor = true;
             // 
             // btnAdd
