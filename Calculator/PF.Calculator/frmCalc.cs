@@ -16,6 +16,13 @@ namespace PF.Calculator
         {
             InitializeComponent();
         }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            lblDisplay.Text = lblDisplay.Text + button.Text;
+
+        }
     }
 }
 
