@@ -8,9 +8,24 @@ namespace PF.Calculator.BL
 {
     public class Calculator
     {
-      // switch(operation){
-         //   case
+     
+        public double Add(double a, double b)
+        {
+            return a + b;
+        }
 
+        public double Sub(double a, double b)
+        {
+            return a - b;
+        }
+        public double Multi(double a, double b)
+        {
+            return a * b;
+        }
+        public double Dev(double a, double b)
+        {
+            return a / b;
+        }
 
     }
 }
