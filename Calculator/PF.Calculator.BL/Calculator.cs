@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PF.Calculator.BL
 {
-    public class Calculator
+    public class Calc
     {
      
         public double Add(double a, double b)
@@ -26,6 +26,13 @@ namespace PF.Calculator.BL
         {
             return a / b;
         }
-
+        public double SQRT(double a)
+        {
+            return Math.Sqrt(a);
+        }
+        public double fraq(double a)
+        {
+            return 1 / a;
+        }
     }
 }

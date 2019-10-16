@@ -44,11 +44,5 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PF.Calculator\PF.Calculator.csproj">
-      <Project>{9bab169b-8acd-4995-9cca-74d458eaa4d1}</Project>
-      <Name>PF.Calculator</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

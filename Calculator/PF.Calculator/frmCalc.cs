@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PF.Calculator.BL;
 
 
 namespace PF.Calculator
@@ -51,27 +52,27 @@ namespace PF.Calculator
             // lblDisplay.Text = total + " " + opPref;
         }
 
+        
+
         private void equals_clicked(object sender, EventArgs e)
         {
-           
+            Calc calc = new Calc();
+               
             switch (operation)
             {
-                case "+":
-                    lblDisplay.Text = (total + Double.Parse(lblDisplay.Text)).ToString();
+                case "+": lblDisplay.Text = calc.Add(total, (Double.Parse(lblDisplay.Text))).ToString();
+                    //lblDisplay.Text = (total + Double.Parse(lblDisplay.Text)).ToString();
                     break;
-                case "/":
-                    lblDisplay.Text = (total / Double.Parse(lblDisplay.Text)).ToString();
+                case "/": lblDisplay.Text = calc.Dev(total, (Double.Parse(lblDisplay.Text))).ToString();
+                   // lblDisplay.Text = (total / Double.Parse(lblDisplay.Text)).ToString();
                     break;
-                case "x":
-                    lblDisplay.Text = (total * Double.Parse(lblDisplay.Text)).ToString();
+                case "x": lblDisplay.Text = calc.Multi(total, (Double.Parse(lblDisplay.Text))).ToString();
+                 //   lblDisplay.Text = (total * Double.Parse(lblDisplay.Text)).ToString();
                     break;
-                case "-":
-                    lblDisplay.Text = (total - Double.Parse(lblDisplay.Text)).ToString();
+                case "-": lblDisplay.Text = calc.Sub(total, (Double.Parse(lblDisplay.Text))).ToString();
+                   // lblDisplay.Text = (total - Double.Parse(lblDisplay.Text)).ToString();
                     break;
-               // case "sqrt":
-                 //   lblDisplay.Text = (Math.Sqrt(Double.Parse(lblDisplay.Text))).ToString();
-                   // break;
-                default:
+                  default:
                     break;
             }
 
@@ -98,7 +99,9 @@ namespace PF.Calculator
 
         private void sqrt_clicked(object sender, EventArgs e)
         {
-            lblDisplay.Text = (Math.Sqrt(Double.Parse(lblDisplay.Text))).ToString();
+            Calc calc = new Calc();
+
+            lblDisplay.Text = calc.SQRT((Double.Parse(lblDisplay.Text))).ToString();
             total = 0;
             operation = "";
             opPref = false;
@@ -106,7 +109,9 @@ namespace PF.Calculator
 
         private void frac_clicked(object sender, EventArgs e)
         {
-            lblDisplay.Text = (1/(Double.Parse(lblDisplay.Text))).ToString();
+            Calc calc = new Calc();
+
+            lblDisplay.Text = calc.fraq((Double.Parse(lblDisplay.Text))).ToString();
             total = 0;
             operation = "";
             opPref = false;

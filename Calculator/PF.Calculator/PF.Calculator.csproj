@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PF.Calculator.BL\PF.Calculator.BL.csproj">
+      <Project>{0377d2ee-91b8-428e-8496-ffe268aecd79}</Project>
+      <Name>PF.Calculator.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
